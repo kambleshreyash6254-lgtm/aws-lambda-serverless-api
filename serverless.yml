@@ -1,5 +1,4 @@
 service: aws-lambda-serverless-api
-frameworkVersion: '3'
 
 provider:
   name: aws
