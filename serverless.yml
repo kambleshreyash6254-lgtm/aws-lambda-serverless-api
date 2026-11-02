@@ -1,0 +1,14 @@
+service: aws-lambda-serverless-api
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: python3.9
+
+functions:
+  hello:
+    handler: lambda-function.lambda_handler
+    events:
+      - httpApi:
+          path: /hello
+          method: get
