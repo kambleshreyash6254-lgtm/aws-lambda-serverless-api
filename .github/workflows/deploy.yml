@@ -17,8 +17,7 @@ jobs:
           node-version: '18'
           
       - name: Install Serverless Framework
-        run: npm install -g serverless
-        @3
+        run: npm install -g serverless@3
       - name: Deploy to AWS
         run: serverless deploy --verbose
         env:
